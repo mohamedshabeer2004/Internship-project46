@@ -1,0 +1,1529 @@
+{
+  "success": true,
+  "message": "Page fetched successfully",
+  "data": {
+    "header": {
+      "id": 5,
+      "name": "header",
+      "type": "header",
+      "is_global": true,
+      "is_active": true,
+      "endpoint_id": null,
+      "components": [
+        {
+          "id": 357,
+          "position": 0,
+          "data": {
+            "url": "https://www.boom.yugme.com/"
+          },
+          "definition": {
+            "id": 5,
+            "name": "header footer logo",
+            "slug": "header-footer-logo",
+            "fields": [
+              {
+                "key": "url",
+                "type": "url",
+                "label": "Logo Url"
+              }
+            ],
+            "validation_rules": {
+              "url": "required|string"
+            },
+            "allowed_layout_types": [
+              "footer",
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-24T11:25:34.000000Z",
+            "updated_at": "2026-02-24T11:25:34.000000Z"
+          }
+        },
+        {
+          "id": 358,
+          "position": 1,
+          "data": {
+            "features": [
+              {
+                "title": "Products",
+                "options": [
+                  {
+                    "url": "#message_templates",
+                    "Name": "Message Templates",
+                    "icon": "Puzzle"
+                  },
+                  {
+                    "url": "#campaigns",
+                    "Name": "Campaigns",
+                    "icon": "MegaphoneIcon"
+                  },
+                  {
+                    "url": "#media_library",
+                    "Name": "Media Library",
+                    "icon": "FolderOpen"
+                  },
+                  {
+                    "url": "#live_chat",
+                    "Name": "Live Chat",
+                    "icon": "WhatsappLogo"
+                  },
+                  {
+                    "url": "#automations",
+                    "Name": "Automations",
+                    "icon": "Rocket"
+                  },
+                  {
+                    "url": "#team_management",
+                    "Name": "Team Management",
+                    "icon": "Users"
+                  },
+                  {
+                    "url": "#analytics",
+                    "Name": "Analytics & Reports",
+                    "icon": "BarChart3"
+                  },
+                  {
+                    "url": "#catalog",
+                    "Name": "Catalog Management",
+                    "icon": "Package"
+                  },
+                  {
+                    "url": "#contacts",
+                    "Name": "Contact Management",
+                    "icon": "UserCircle"
+                  },
+                  {
+                    "url": "#third_party",
+                    "Name": "API Integration",
+                    "icon": "Plug"
+                  },
+                  {
+                    "url": "#manage_leads",
+                    "Name": "Leads Management Center",
+                    "icon": "Users"
+                  },
+                  {
+                    "url": "#support",
+                    "Name": "Support & Feedback Center",
+                    "icon": "LifeBuoy"
+                  },
+                  {
+                    "url": "#webhook",
+                    "Name": "Webhook Integration Support",
+                    "icon": "Webhook"
+                  }
+                ]
+              }
+            ]
+          },
+          "definition": {
+            "id": 6,
+            "name": "header feature dropdown",
+            "slug": "header-feature-dropdown",
+            "fields": [
+              {
+                "key": "features",
+                "type": "array",
+                "label": "Features",
+                "children": [
+                  {
+                    "key": "title",
+                    "type": "text",
+                    "label": "Title"
+                  },
+                  {
+                    "key": "options",
+                    "type": "array",
+                    "label": "Options",
+                    "children": [
+                      {
+                        "key": "icon",
+                        "type": "text",
+                        "label": "Icon"
+                      },
+                      {
+                        "key": "Name",
+                        "type": "text",
+                        "label": "Name"
+                      },
+                      {
+                        "key": "url",
+                        "type": "url",
+                        "label": "URL"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "validation_rules": {
+              "features.*.title": "required|string",
+              "features.*.options.*.url": "required|string",
+              "features.*.options.*.Name": "required|string",
+              "features.*.options.*.icon": "required|string"
+            },
+            "allowed_layout_types": [
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-24T11:35:10.000000Z",
+            "updated_at": "2026-02-24T11:32:22.000000Z"
+          }
+        },
+        {
+          "id": 359,
+          "position": 2,
+          "data": {
+            "solutions": [
+              {
+                "title": "industry",
+                "options": [
+                  {
+                    "url": "#our_industry",
+                    "icon": "ShoppingCart",
+                    "name": "E-commerce",
+                    "description": "Boost sales & reduce cart abandonment"
+                  },
+                  {
+                    "url": "#our_industry",
+                    "icon": "GraduationCap",
+                    "name": "Education",
+                    "description": "Engage students & parents effectively"
+                  },
+                  {
+                    "url": "#our_industry",
+                    "icon": "Landmark",
+                    "name": "Finance & Banking",
+                    "description": "Secure & instant customer updates"
+                  },
+                  {
+                    "url": "#our_industry",
+                    "icon": "Heart",
+                    "name": "Healthcare",
+                    "description": "Improve patient engagement"
+                  },
+                  {
+                    "url": "#our_industry",
+                    "icon": "Building2",
+                    "name": "Real Estate",
+                    "description": "Convert leads faster"
+                  },
+                  {
+                    "url": "#our_industry",
+                    "icon": "Plane",
+                    "name": "Travel & Hospitality",
+                    "description": "Enhance guest experience"
+                  }
+                ]
+              },
+              {
+                "title": "products",
+                "options": [
+                  {
+                    "url": "#our_products",
+                    "icon": "Sparkles",
+                    "name": "AI Automation Generator",
+                    "description": "AI Automation Generator"
+                  },
+                  {
+                    "url": "#our_products",
+                    "icon": "Bot",
+                    "name": "Chatbot Automation",
+                    "description": "Chatbot Automation"
+                  },
+                  {
+                    "url": "#our_products",
+                    "icon": "Banknote",
+                    "name": "WhatsApp Payments",
+                    "description": "WhatsApp Payments"
+                  },
+                  {
+                    "url": "#our_products",
+                    "icon": "Workflow",
+                    "name": "Dynamic Form Generator",
+                    "description": "Dynamic Form Generator"
+                  },
+                  {
+                    "url": "#our_products",
+                    "icon": "Terminal",
+                    "name": "API Developer Tools",
+                    "description": "API Developer Tools"
+                  },
+                  {
+                    "url": "/whatsapp-link-generator",
+                    "icon": "QrCode",
+                    "name": "WhatsApp Link & QR",
+                    "description": "WhatsApp Link & QR"
+                  },
+                  {
+                    "url": "/config-whatsapp-chat",
+                    "icon": "WhatsappLogo",
+                    "name": "WhatsApp Button",
+                    "description": "WhatsApp Button"
+                  }
+                ]
+              }
+            ]
+          },
+          "definition": {
+            "id": 7,
+            "name": "header solutions dropdown",
+            "slug": "header-solutions-dropdown",
+            "fields": [
+              {
+                "key": "solutions",
+                "type": "array",
+                "label": "Solutions",
+                "children": [
+                  {
+                    "key": "title",
+                    "type": "text",
+                    "label": "Title"
+                  },
+                  {
+                    "key": "options",
+                    "type": "array",
+                    "label": "Options",
+                    "children": [
+                      {
+                        "key": "icon",
+                        "type": "text",
+                        "label": "Icon"
+                      },
+                      {
+                        "key": "name",
+                        "type": "text",
+                        "label": "Name"
+                      },
+                      {
+                        "key": "description",
+                        "type": "text",
+                        "label": "Description"
+                      },
+                      {
+                        "key": "url",
+                        "type": "url",
+                        "label": "URL"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "validation_rules": {
+              "solutions.*.title": "required|string",
+              "solutions.*.options.*.url": "required|string",
+              "solutions.*.options.*.icon": "required|string",
+              "solutions.*.options.*.name": "required|string",
+              "solutions.*.options.*.description": "required|string"
+            },
+            "allowed_layout_types": [
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-24T12:16:19.000000Z",
+            "updated_at": "2026-02-24T12:16:19.000000Z"
+          }
+        },
+        {
+          "id": 361,
+          "position": 4,
+          "data": {
+            "features": [
+              {
+                "title": "Free Tools",
+                "options": [
+                  {
+                    "url": "/whatsapp-link-generator",
+                    "Name": "Whatsapp Link & QR Generator",
+                    "icon": "QrCode"
+                  },
+                  {
+                    "url": "/config-whatsapp-chat",
+                    "Name": "Whatsapp Button",
+                    "icon": "WhatsappLogo"
+                  }
+                ]
+              }
+            ]
+          },
+          "definition": {
+            "id": 6,
+            "name": "header feature dropdown",
+            "slug": "header-feature-dropdown",
+            "fields": [
+              {
+                "key": "features",
+                "type": "array",
+                "label": "Features",
+                "children": [
+                  {
+                    "key": "title",
+                    "type": "text",
+                    "label": "Title"
+                  },
+                  {
+                    "key": "options",
+                    "type": "array",
+                    "label": "Options",
+                    "children": [
+                      {
+                        "key": "icon",
+                        "type": "text",
+                        "label": "Icon"
+                      },
+                      {
+                        "key": "Name",
+                        "type": "text",
+                        "label": "Name"
+                      },
+                      {
+                        "key": "url",
+                        "type": "url",
+                        "label": "URL"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "validation_rules": {
+              "features.*.title": "required|string",
+              "features.*.options.*.url": "required|string",
+              "features.*.options.*.Name": "required|string",
+              "features.*.options.*.icon": "required|string"
+            },
+            "allowed_layout_types": [
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-24T11:35:10.000000Z",
+            "updated_at": "2026-02-24T11:32:22.000000Z"
+          }
+        },
+        {
+          "id": 362,
+          "position": 5,
+          "data": {
+            "features": [
+              {
+                "title": "Resources",
+                "options": [
+                  {
+                    "url": "https://www.boom.yugme.com/blog",
+                    "Name": "Blog",
+                    "icon": "BookOpenText"
+                  },
+                  {
+                    "url": "#faq",
+                    "Name": "FAQ",
+                    "icon": "CircleQuestionMark"
+                  }
+                ]
+              }
+            ]
+          },
+          "definition": {
+            "id": 6,
+            "name": "header feature dropdown",
+            "slug": "header-feature-dropdown",
+            "fields": [
+              {
+                "key": "features",
+                "type": "array",
+                "label": "Features",
+                "children": [
+                  {
+                    "key": "title",
+                    "type": "text",
+                    "label": "Title"
+                  },
+                  {
+                    "key": "options",
+                    "type": "array",
+                    "label": "Options",
+                    "children": [
+                      {
+                        "key": "icon",
+                        "type": "text",
+                        "label": "Icon"
+                      },
+                      {
+                        "key": "Name",
+                        "type": "text",
+                        "label": "Name"
+                      },
+                      {
+                        "key": "url",
+                        "type": "url",
+                        "label": "URL"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "validation_rules": {
+              "features.*.title": "required|string",
+              "features.*.options.*.url": "required|string",
+              "features.*.options.*.Name": "required|string",
+              "features.*.options.*.icon": "required|string"
+            },
+            "allowed_layout_types": [
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-24T11:35:10.000000Z",
+            "updated_at": "2026-02-24T11:32:22.000000Z"
+          }
+        },
+        {
+          "id": 364,
+          "position": 7,
+          "data": {
+            "url": "/login",
+            "name": "Login"
+          },
+          "definition": {
+            "id": 11,
+            "name": "header other",
+            "slug": "header-other",
+            "fields": [
+              {
+                "key": "name",
+                "type": "text",
+                "label": "Name",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "url",
+                "type": "text",
+                "label": "URL",
+                "required": false,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "url": "nullable|string",
+              "name": "nullable|string"
+            },
+            "allowed_layout_types": [
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-25T06:59:59.000000Z",
+            "updated_at": "2026-02-25T06:59:59.000000Z"
+          }
+        },
+        {
+          "id": 365,
+          "position": 8,
+          "data": {
+            "url": "/signup",
+            "name": "Sign Up Free"
+          },
+          "definition": {
+            "id": 11,
+            "name": "header other",
+            "slug": "header-other",
+            "fields": [
+              {
+                "key": "name",
+                "type": "text",
+                "label": "Name",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "url",
+                "type": "text",
+                "label": "URL",
+                "required": false,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "url": "nullable|string",
+              "name": "nullable|string"
+            },
+            "allowed_layout_types": [
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-25T06:59:59.000000Z",
+            "updated_at": "2026-02-25T06:59:59.000000Z"
+          }
+        }
+      ],
+      "created_at": "2026-02-21T13:43:05.000000Z",
+      "updated_at": "2026-02-21T13:43:05.000000Z"
+    },
+    "page": {
+      "id": 75,
+      "title": "WhatsApp Template Messages for Healthcare Industry",
+      "slug": "whatsapp-template-messages-for-healthcare-industry",
+      "description": null,
+      "image": null,
+      "endpoint": "blog",
+      "updated_at": "2026-03-25T10:34:10.000000Z",
+      "components": [
+        {
+          "id": 5470,
+          "position": 0,
+          "data": {
+            "title": [
+              {
+                "url": null,
+                "value": "Top 20 WhatsApp Template Messages for Healthcare Industry"
+              }
+            ]
+          },
+          "definition": {
+            "id": 26,
+            "name": "blog title",
+            "slug": "blog-title",
+            "fields": [
+              {
+                "key": "title",
+                "type": "array",
+                "label": "Title",
+                "children": [
+                  {
+                    "key": "value",
+                    "type": "text",
+                    "label": "Enter Value",
+                    "required": true,
+                    "max_length": null
+                  },
+                  {
+                    "key": "url",
+                    "type": "text",
+                    "label": "Enter URL",
+                    "required": false,
+                    "max_length": null
+                  }
+                ],
+                "required": true,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "title.*.url": "nullable|string",
+              "title.*.value": "required|string"
+            },
+            "allowed_layout_types": [
+              "page"
+            ],
+            "translatable_fields": null,
+            "is_default": true,
+            "created_at": "2026-02-27T12:56:10.000000Z",
+            "updated_at": "2026-02-26T13:18:22.000000Z"
+          }
+        },
+        {
+          "id": 5471,
+          "position": 1,
+          "data": {
+            "image": "https://yugme.s3.ap-south-1.amazonaws.com/media/org_/d0ce657b-42c0-4af2-ba5f-b4dcd369ea8c.png",
+            "title": "Top 20 WhatsApp Template Messages for Healthcare Industry",
+            "author": null,
+            "category": [
+              {
+                "category_url": "https://www.boom.yugme.com/category/smart-message-template",
+                "category_name": "Smart Message Template"
+              }
+            ],
+            "read_time": null,
+            "description": "Looking to simplify patient communication, appointment reminders, or health updates? WhatsApp has become a reliable platform for healthcare providers to connect with patients in a fast, secure, and personalized way.\n\nIn this blog, we’ve compiled 20 ready-to-use WhatsApp template messages for healthcare to help you:\n\n- Send timely appointment reminders\n- Share lab reports and prescriptions seamlessly\n- Offer teleconsultation services\n- Promote vaccination and wellness campaigns\n- Collect feedback and improve patient engagement",
+            "verified_by": null
+          },
+          "definition": {
+            "id": 24,
+            "name": "blog head",
+            "slug": "blog-head",
+            "fields": [
+              {
+                "key": "title",
+                "type": "textarea",
+                "label": "Title",
+                "required": true,
+                "max_length": null
+              },
+              {
+                "key": "description",
+                "type": "richtext",
+                "label": "Description",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "image",
+                "type": "image",
+                "label": "Image",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "author",
+                "type": "text",
+                "label": "Author",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "verified_by",
+                "type": "text",
+                "label": "Verified By",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "read_time",
+                "type": "text",
+                "label": "Read Time",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "category",
+                "type": "array",
+                "label": "Category",
+                "children": [
+                  {
+                    "key": "category_name",
+                    "type": "text",
+                    "label": "Category Name",
+                    "required": true,
+                    "max_length": null
+                  },
+                  {
+                    "key": "category_url",
+                    "type": "text",
+                    "label": "Category URL",
+                    "required": true,
+                    "max_length": null
+                  }
+                ],
+                "required": true,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "image": "nullable|string",
+              "title": "required|string",
+              "author": "nullable|string",
+              "read_time": "nullable|string",
+              "description": "nullable|string",
+              "verified_by": "nullable|string",
+              "category.*.category_url": "required|string",
+              "category.*.category_name": "required|string"
+            },
+            "allowed_layout_types": [
+              "page"
+            ],
+            "translatable_fields": [],
+            "is_default": true,
+            "created_at": "2026-03-25T06:21:34.000000Z",
+            "updated_at": "2026-02-26T08:57:07.000000Z"
+          }
+        },
+        {
+          "id": 5472,
+          "position": 2,
+          "data": {
+            "notes": [
+              {
+                "note": "Understanding WhatsApp Template Messages"
+              },
+              {
+                "note": "Benefits of WhatsApp for Healthcare Providers"
+              },
+              {
+                "note": "Top 20 WhatsApp Template Messages for Healthcare Industry"
+              },
+              {
+                "note": "Key Tips for Creating Effective WhatsApp Template Messages"
+              },
+              {
+                "note": "How to Send WhatsApp Template Messages Efficiently"
+              },
+              {
+                "note": "Conclusion"
+              },
+              {
+                "note": "Frequently Asked Questions"
+              }
+            ],
+            "title": "Overview"
+          },
+          "definition": {
+            "id": 25,
+            "name": "blog key note",
+            "slug": "blog-key-note",
+            "fields": [
+              {
+                "key": "title",
+                "type": "text",
+                "label": "Title",
+                "required": false,
+                "max_length": null
+              },
+              {
+                "key": "notes",
+                "type": "array",
+                "label": "Add Notes",
+                "children": [
+                  {
+                    "key": "note",
+                    "type": "text",
+                    "label": "Enter Note",
+                    "required": true,
+                    "max_length": null
+                  }
+                ],
+                "required": true,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "title": "nullable|string",
+              "notes.*.note": "required|string"
+            },
+            "allowed_layout_types": [
+              "page"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-26T09:00:59.000000Z",
+            "updated_at": "2026-02-26T09:00:59.000000Z"
+          }
+        },
+        {
+          "id": 5473,
+          "position": 3,
+          "data": {
+            "description": [
+              {
+                "image": null,
+                "content": "**Understanding WhatsApp Template Messages**\nWhatsApp Template Messages are pre-approved message formats that businesses use to send notifications or start conversations with users who haven’t interacted within the last 24 hours. They are ideal for proactive communication, such as sharing updates, alerts, and reminders.\n\nWith platforms like Yugme Boom, you can easily create, get approval for, and automate these templates—allowing you to reach thousands of users instantly and efficiently.",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**Benefits of WhatsApp for Healthcare Providers**\nHealthcare providers are increasingly adopting WhatsApp to enhance patient communication and streamline operations. Here’s why:\n\n- **Secure communication:** End-to-end encryption ensures  patient data remains private and protected\n- **High engagement rates:** With open rates around 98%, messages are far more likely to be seen than emails\n- **Automation capabilities:** Easily automate recurring updates, reminders, and notifications\n- **Real-time interaction:** Enable instant communication and quicker response times\n- **Operational efficiency:** Simplify processes like patient onboarding, support queries, payments, and alerts\n\nThis makes WhatsApp a reliable and efficient channel for delivering timely and personalized healthcare communication.",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**Top 20 WhatsApp Template Messages for Healthcare Industry**\n**1. Appointment Confirmation Template**\nHi {{name}}, your appointment with Dr. {{doctor}} has been confirmed for {{date}} at {{time}}.\n- Location: {{location}}\n- Kindly arrive 10 minutes early.\nReply YES to confirm or NO to cancel.\n**2. Appointment Reminder Template**\nReminder: You have an appointment with Dr. {{doctor}} scheduled for tomorrow at {{time}}.\nClinic: {{location}}\nNeed to reschedule? Click below:\n[Reschedule Appointment]\n\n**3. Missed Appointment Follow-Up**\n\nHi {{name}}, we noticed you missed your appointment with Dr. {{doctor}} today. Would you like to reschedule?\n[Book New Slot]",
+                "image_title": null
+              },
+              {
+                "image": "https://yugme.s3.ap-south-1.amazonaws.com/media/org_/916eaf32-ac1a-4858-9324-2b2df2b08983.png",
+                "content": "**Prescription & Report Sharing Templates**\n\nShare prescriptions and test reports securely with patients through WhatsApp, ensuring quick access and convenient communication.",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**Lab Report Ready Notification Template**\nHi {{name}}, your lab test report is now ready.\n- Test: {{test_name}}\n- [Download Report]\nFeel free to contact us if you have any questions.\n\n**Doctor’s Prescription Message**\nHello {{name}}, your e-prescription from Dr. {{doctor}} is now available.\n- [View Prescription]\n- Call us if you need any clarification regarding your medicines.",
+                "image_title": null
+              },
+              {
+                "image": "https://yugme.s3.ap-south-1.amazonaws.com/media/org_/1f94fbc2-51e1-4d66-aef3-753808699de2.png",
+                "content": "**Online Consultation Templates**\n\nEasily promote and manage online consultations",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**6. Book a Teleconsultation**\n\nNeed to consult a doctor from the comfort of your home? \nBook a teleconsultation with Dr. {{doctor}} today.\nAvailable slots: {{start_time}} to {{end_time}}\n[Book Now]\n\n**7. Teleconsultation Reminder**\n\nHi {{name}}, this is a reminder for your online consultation with Dr. {{doctor}} on {{date}}.\nJoin the session here: [Join Call]\nPlease keep your medical details ready.",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**Vaccination & Health Campaign Templates**\nPromote public health initiatives and share important updates with ease.\n\n**8. Vaccination Slot Availability Notification**\n\nHi {{name}}, COVID-19 vaccination slots are now available at {{location}}.\nDate: {{date}} | Time: {{time}}\nSecure your slot today:\n[Book Vaccine]\n\n**9. Health Camp Invitation**\n\nYou’re invited to our Free Health Check-up Camp \nLocation: {{location}}\nDate: {{date}} | Time: {{time}}\nServices include BP check, sugar test, eye check-up, and more.\n[Register Now]",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**Follow-Up & Feedback Message Templates**\n\nStay connected with patients after consultations and improve engagement.\n\n**10. Post-Consultation Follow-Up**\n\nHi {{name}}, we hope you’re feeling better after your consultation with Dr. {{doctor}}.\nNeed any further assistance? We’re here to help.\n[Chat with Support]\n\n**11. Feedback Request Message**\n\nWe’d love to hear your feedback! 💬\nHow was your experience with Dr. {{doctor}}?\n[Give Feedback]\nYour input helps us serve you better.\n\n**12. Next Visit Reminder**\n\nHi {{name}}, it’s time for your routine check-up.\nBook your follow-up appointment with Dr. {{doctor}} today.\n[Schedule Appointment]",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**Healthcare Promotion and Awareness Communication Templates**\n\nPromote healthcare services and raise awareness through engaging messages",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**13. Wellness Package Promotion**\nTake a step towards better health with our Full Body Check-up package \n- Includes 70+ tests | Starting at ₹999\n- Book today and enjoy an extra 10% off\n[View Packages]\n\n**14. Women’s Health Awareness Campaign**\n\nPrioritize your health this Women’s Day \nGet 20% OFF on Gynecologist consultations\nOffer valid until {{offer_end_date}}\n[Book Now]",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**Re-engagement Message Templates**\nReconnect with inactive patients and keep them engaged with helpful and personalized communication.\n\n**15. Patient Re-engagement Message**\nHi {{name}}, it’s been a while since your last visit!\nRegular health check-ups are key to staying fit \nSchedule your appointment with Dr. {{doctor}} today.\n[Book Now]\n\n**16. Seasonal Health Tips Message**\n\nHello {{name}}, with {{season}} approaching, here are a few tips to stay healthy:\n- Stay hydrated\n- Eat seasonal fruits\n- Get 7–8 hours of sleep\nLooking for personalized advice?\n[Talk to a Doctor]",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "Payment & Billing Message Templates\n\nEnsure smooth and transparent transactions with automated billing and payment updates.\n\n**17. Payment Confirmation Message**\n\nHi {{name}}, your payment of ${{amount}} for {{service}} has been successfully received.\nThank you for choosing our services!\n[Download Invoice]\n\n**18. Payment Reminder Message**\n\nHi {{name}}, your payment for {{service}} is still pending.\n- Amount Due: ${{amount}}\nPlease complete the payment by {{due_date}}.\n[Pay Now]",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**Emergency & Critical Alert Templates**\n\nDeliver urgent updates and ensure patients receive timely care when it matters most.\n\n**19. Emergency Helpline Information**\n\nHi {{name}}, in case of a medical emergency, our team is available 24/7.\n- Tap below to connect with our emergency helpline or dial {{number}} directly.\n[Call Emergency]\n\n**20. Critical Lab Result Alert**\n\nHi {{name}}, your recent lab report for {{test_name}} requires immediate attention.\n- Please contact Dr. {{doctor}} as soon as possible.\n[Call Now]",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**Key Tips for Creating Effective WhatsApp Template Messages**\n\nEvery WhatsApp template message is reviewed to ensure it meets platform guidelines. Keep these essential points in mind while drafting your templates:\n\n- Use formatting like bold, italics, and ~strikethrough~, along with emojis, to enhance readability and impact\n- Ensure proper message formatting to avoid rejection during the approval process\n- Include clear Call-to-Action or Quick Reply buttons, keeping button text within the 20-character limit\n- Use emojis thoughtfully to add a personal and engaging touch",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**How to Send WhatsApp Template Messages Efficiently**\n\no send WhatsApp Template Messages, you need a reliable WhatsApp Business API provider like AiSensy.\n\nAiSensy is a powerful platform that simplifies WhatsApp marketing and communication. Here’s what you can do:\n\n- Broadcast messages to a large audience that has opted in\n- Automate transactional notifications with secure, end-to-end encryption\n- Engage in one-on-one conversations with customers in real time\n- Build chatbots easily using a no-code, drag-and-drop interface\n- Run targeted retargeting campaigns to reconnect with specific users\n- Launch Click-to-WhatsApp ads to drive instant customer interactions",
+                "image_title": null
+              },
+              {
+                "image": null,
+                "content": "**Conclusion**\nThese WhatsApp template messages for healthcare can help you streamline patient communication and improve overall efficiency.\n\nWhether you run a hospital, diagnostic lab, clinic, or medical center, WhatsApp offers a reliable way to keep patients informed and engaged.\n\nUse the templates above to get started today. Need help setting up WhatsApp automation? We’re here to assist.",
+                "image_title": null
+              }
+            ]
+          },
+          "definition": {
+            "id": 14,
+            "name": "blog-description",
+            "slug": "blog-description",
+            "fields": [
+              {
+                "key": "description",
+                "type": "array",
+                "label": "description",
+                "children": [
+                  {
+                    "key": "content",
+                    "type": "richtext",
+                    "label": "Content",
+                    "required": true,
+                    "max_length": null
+                  },
+                  {
+                    "key": "image",
+                    "type": "image",
+                    "label": "Add Image",
+                    "required": false,
+                    "max_length": null
+                  },
+                  {
+                    "key": "image_title",
+                    "type": "text",
+                    "label": "Add Image Title",
+                    "required": false,
+                    "max_length": 150
+                  }
+                ],
+                "required": true,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "description.*.image": "nullable|string",
+              "description.*.content": "required|string",
+              "description.*.image_title": "nullable|string|max:150"
+            },
+            "allowed_layout_types": [
+              "page"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-03-03T06:27:17.000000Z",
+            "updated_at": "2026-02-25T10:47:30.000000Z"
+          }
+        },
+        {
+          "id": 5474,
+          "position": 4,
+          "data": {
+            "title": "Frequently Asked Questions",
+            "questions": [
+              {
+                "answer": "WhatsApp Template Messages are pre-approved message formats that businesses use to communicate with users outside the 24-hour customer service window. They are commonly used for promotions, product updates, abandoned cart reminders, and festive greetings.",
+                "question": "What are WhatsApp Template Messages used for?"
+              },
+              {
+                "answer": "Yes, every template must be approved by WhatsApp before it can be used. This ensures the message complies with platform policies and maintains quality standards.",
+                "question": "Is approval required for WhatsApp Template Messages?"
+              },
+              {
+                "answer": "No, approved templates cannot be modified. However, you can update dynamic fields (such as names, dates, or order details) when sending the message.",
+                "question": "Can approved WhatsApp Template Messages be edited?"
+              },
+              {
+                "answer": "These messages support text, images, files, and videos. However, text is mandatory—media cannot be sent on its own as a template.",
+                "question": "Which media formats are supported in WhatsApp Template Messages?"
+              },
+              {
+                "answer": "WhatsApp strictly prohibits spam and harmful content. Messages must not include abusive language, misleading information, or promotions related to restricted products.",
+                "question": "What are the content guidelines for WhatsApp Template Messages?"
+              }
+            ],
+            "description": "A quick guide answering key questions about WhatsApp Template Messages, including usage, approval, and best practices."
+          },
+          "definition": {
+            "id": 21,
+            "name": "index faq",
+            "slug": "index-faq",
+            "fields": [
+              {
+                "key": "title",
+                "type": "text",
+                "label": "Title",
+                "required": true,
+                "translate": true,
+                "max_length": null
+              },
+              {
+                "key": "description",
+                "type": "textarea",
+                "label": "Description",
+                "required": true,
+                "translate": true,
+                "max_length": null
+              },
+              {
+                "key": "questions",
+                "type": "array",
+                "label": "Questions",
+                "children": [
+                  {
+                    "key": "question",
+                    "type": "text",
+                    "label": "Question",
+                    "required": true,
+                    "translate": true,
+                    "max_length": null
+                  },
+                  {
+                    "key": "answer",
+                    "type": "textarea",
+                    "label": "Answer",
+                    "required": true,
+                    "translate": true,
+                    "max_length": null
+                  }
+                ],
+                "required": true,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "title": "required|string",
+              "description": "required|string",
+              "questions.*.answer": "required|string",
+              "questions.*.question": "required|string"
+            },
+            "allowed_layout_types": [
+              "page"
+            ],
+            "translatable_fields": [
+              "title",
+              "description",
+              "questions.*.question",
+              "questions.*.answer"
+            ],
+            "is_default": false,
+            "created_at": "2026-03-20T10:06:24.000000Z",
+            "updated_at": "2026-02-26T02:26:45.000000Z"
+          }
+        },
+        {
+          "id": 5475,
+          "position": 5,
+          "data": {
+            "image": "https://yugme.s3.ap-south-1.amazonaws.com/media/org_/b5d80994-8fd9-4bd1-be1b-70fa7fbd57e3.png",
+            "index": true,
+            "title": "Top 20 WhatsApp Template Messages for Healthcare Industry",
+            "keywords": "WhatsApp Template Messages for Healthcare Industry",
+            "canonical": "https://www.boom.yugme.com/blog/whatsapp-template-messages-for-healthcare-industry",
+            "description": "Improve patient communication with the top 20 WhatsApp template messages for the healthcare industry, designed to boost engagement and streamline operations."
+          },
+          "definition": {
+            "id": 32,
+            "name": "seo component",
+            "slug": "seo-component",
+            "fields": [
+              {
+                "key": "title",
+                "type": "textarea",
+                "label": "Enter Title",
+                "required": true,
+                "max_length": 60
+              },
+              {
+                "key": "description",
+                "type": "textarea",
+                "label": "Enter Description",
+                "required": true,
+                "max_length": 160
+              },
+              {
+                "key": "canonical",
+                "type": "url",
+                "label": "Enter Canonical URL",
+                "required": true,
+                "max_length": null
+              },
+              {
+                "key": "index",
+                "type": "boolean",
+                "label": "Set Index",
+                "required": true,
+                "max_length": null
+              },
+              {
+                "key": "keywords",
+                "type": "textarea",
+                "label": "Enter Keywords",
+                "required": true,
+                "max_length": null
+              },
+              {
+                "key": "image",
+                "type": "image",
+                "label": "Add Image",
+                "required": true,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "image": "required|string",
+              "index": "required|boolean",
+              "title": "required|string|max:60",
+              "keywords": "required|string",
+              "canonical": "required|url",
+              "description": "required|string|max:160"
+            },
+            "allowed_layout_types": [
+              "page"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-03-06T10:40:56.000000Z",
+            "updated_at": "2026-02-28T12:03:51.000000Z"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "id": 7,
+      "name": "footer",
+      "type": "footer",
+      "is_global": true,
+      "is_active": true,
+      "endpoint_id": null,
+      "components": [
+        {
+          "id": 355,
+          "position": 0,
+          "data": {
+            "url": "https://boom.yugme.com/"
+          },
+          "definition": {
+            "id": 5,
+            "name": "header footer logo",
+            "slug": "header-footer-logo",
+            "fields": [
+              {
+                "key": "url",
+                "type": "url",
+                "label": "Logo Url"
+              }
+            ],
+            "validation_rules": {
+              "url": "required|string"
+            },
+            "allowed_layout_types": [
+              "footer",
+              "header"
+            ],
+            "translatable_fields": null,
+            "is_default": false,
+            "created_at": "2026-02-24T11:25:34.000000Z",
+            "updated_at": "2026-02-24T11:25:34.000000Z"
+          }
+        },
+        {
+          "id": 356,
+          "position": 1,
+          "data": {
+            "footer_toc": [
+              {
+                "url": "/pages/terms-of-service",
+                "title": "Terms of Service"
+              },
+              {
+                "url": "/pages/privacy-policy",
+                "title": "Privacy Policy"
+              },
+              {
+                "url": "/pages/refund-policy",
+                "title": "Refund Policy"
+              }
+            ],
+            "description": "The most powerful WhatsApp marketing and automation platform. \nTransform how you connect with customers.",
+            "social_links": [
+              {
+                "icon": "Twitter",
+                "link": "https://www.twitter.com/yugmedeals",
+                "brand": "Twitter"
+              },
+              {
+                "icon": "Linkedin",
+                "link": "https://www.linkedin.com/company/yugmedeals",
+                "brand": "Linkedin"
+              },
+              {
+                "icon": "Instagram",
+                "link": "https://www.instagram.com/yugmedeals",
+                "brand": "Instagram"
+              },
+              {
+                "icon": "Facebook",
+                "link": "https://www.facebook.com/yugmedealsoffical",
+                "brand": "Facebook"
+              }
+            ],
+            "footer_others": [
+              {
+                "links": [
+                  {
+                    "url": "#features",
+                    "name": "Features"
+                  },
+                  {
+                    "url": "/pricing",
+                    "name": "Pricing"
+                  },
+                  {
+                    "url": "#",
+                    "name": "API"
+                  },
+                  {
+                    "url": "#",
+                    "name": "Integrations"
+                  },
+                  {
+                    "url": "/config-whatsapp-chat",
+                    "name": "Generate WhatsApp Button"
+                  },
+                  {
+                    "url": "/whatsapp-link-generator",
+                    "name": "Generate WhatsApp Link"
+                  }
+                ],
+                "title": "product"
+              },
+              {
+                "links": [
+                  {
+                    "url": "/blog",
+                    "name": "Blog"
+                  },
+                  {
+                    "url": "#",
+                    "name": "Help Center"
+                  },
+                  {
+                    "url": "#",
+                    "name": "Documentation"
+                  },
+                  {
+                    "url": "#",
+                    "name": "Guides"
+                  }
+                ],
+                "title": "resources"
+              },
+              {
+                "links": [
+                  {
+                    "url": "#",
+                    "name": "About"
+                  },
+                  {
+                    "url": "#contact",
+                    "name": "Contact"
+                  },
+                  {
+                    "url": "#",
+                    "name": "Careers"
+                  },
+                  {
+                    "url": "/pages/terms-of-service",
+                    "name": "Terms of Service"
+                  },
+                  {
+                    "url": "/pages/privacy-policy",
+                    "name": "Privacy Policy"
+                  },
+                  {
+                    "url": "/pages/refund-policy",
+                    "name": "Refund Policy"
+                  }
+                ],
+                "title": "company"
+              }
+            ]
+          },
+          "definition": {
+            "id": 4,
+            "name": "index footer",
+            "slug": "index-footer",
+            "fields": [
+              {
+                "key": "footer_others",
+                "type": "array",
+                "label": "Footer Others",
+                "children": [
+                  {
+                    "key": "title",
+                    "type": "text",
+                    "label": "Title"
+                  },
+                  {
+                    "key": "links",
+                    "type": "array",
+                    "label": "Footer Links",
+                    "children": [
+                      {
+                        "key": "name",
+                        "type": "text",
+                        "label": "Enter name"
+                      },
+                      {
+                        "key": "url",
+                        "type": "text",
+                        "label": "URL"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "key": "social_links",
+                "type": "array",
+                "label": "Social Links",
+                "children": [
+                  {
+                    "key": "brand",
+                    "type": "text",
+                    "label": "Brand Name",
+                    "required": true,
+                    "max_length": null
+                  },
+                  {
+                    "key": "icon",
+                    "type": "text",
+                    "label": "Icon",
+                    "required": true,
+                    "max_length": null
+                  },
+                  {
+                    "key": "link",
+                    "type": "url",
+                    "label": "Link",
+                    "required": true,
+                    "max_length": null
+                  }
+                ],
+                "required": true,
+                "max_length": null
+              },
+              {
+                "key": "description",
+                "type": "textarea",
+                "label": "Description",
+                "required": true,
+                "max_length": null
+              },
+              {
+                "key": "footer_toc",
+                "type": "array",
+                "label": "Footer TOC",
+                "children": [
+                  {
+                    "key": "title",
+                    "type": "text",
+                    "label": "Title",
+                    "required": true,
+                    "max_length": null
+                  },
+                  {
+                    "key": "url",
+                    "type": "text",
+                    "label": "URL",
+                    "required": true,
+                    "max_length": null
+                  }
+                ],
+                "required": true,
+                "max_length": null
+              }
+            ],
+            "validation_rules": {
+              "description": "required|string",
+              "footer_toc.*.url": "required|string",
+              "footer_toc.*.title": "required|string",
+              "social_links.*.icon": "required|string",
+              "social_links.*.link": "required|url",
+              "social_links.*.brand": "required|string",
+              "footer_others.*.title": "required|string",
+              "footer_others.*.links.*.url": "required|string",
+              "footer_others.*.links.*.name": "required|string"
+            },
+            "allowed_layout_types": [
+              "footer"
+            ],
+            "translatable_fields": null,
+            "is_default": true,
+            "created_at": "2026-02-26T06:12:39.000000Z",
+            "updated_at": "2026-02-22T12:12:06.000000Z"
+          }
+        }
+      ],
+      "created_at": "2026-02-26T06:12:44.000000Z",
+      "updated_at": "2026-02-26T06:12:44.000000Z"
+    }
+  },
+  "config": [
+    {
+      "key": "address",
+      "value": "YUGMEDEALS PRIVATE LIMITED, 164, Eriyur New Street, Rangapuram, vellore - 632009"
+    },
+    {
+      "key": "company_name",
+      "value": "Yugme Boom"
+    },
+    {
+      "key": "currency",
+      "value": "INR"
+    },
+    {
+      "key": "email",
+      "value": "contactus@yugmedeals.com"
+    },
+    {
+      "key": "favicon",
+      "value": "public/J7R4MAzK0cFHKQXuGukyreibMnwxnQZ8n7yhrgIa.png"
+    },
+    {
+      "key": "google_analytics_tracking_id",
+      "value": null
+    },
+    {
+      "key": "google_maps_api_key",
+      "value": null
+    },
+    {
+      "key": "logo",
+      "value": "public/6Xo8u9goOH3ulWE6YUKS5dCPkrOvmprXYd4Ma4iI.png"
+    },
+    {
+      "key": "phone",
+      "value": "+919790213730"
+    },
+    {
+      "key": "pusher_app_cluster",
+      "value": "ap2"
+    },
+    {
+      "key": "pusher_app_key",
+      "value": "76921fa9431e99e375b5"
+    },
+    {
+      "key": "recaptcha_active",
+      "value": "0"
+    },
+    {
+      "key": "recaptcha_site_key",
+      "value": null
+    },
+    {
+      "key": "socials",
+      "value": "{\"facebook\":\"https:\\/\\/www.facebook.com\\/yugmedealsoffical\",\"twitter\":\"https:\\/\\/www.twitter.com\\/yugmedeals\",\"instagram\":\"https:\\/\\/www.instagram.com\\/yugmedeals\\/\",\"slack\":null,\"linkedin\":\"https:\\/\\/www.linkedin.com\\/company\\/yugmedeals\\/\"}"
+    },
+    {
+      "key": "trial_period",
+      "value": "7"
+    }
+  ],
+  "auth": {
+    "user": null
+  },
+  "organization": [],
+  "organizations": [],
+  "response_data": null,
+  "languages": [
+    {
+      "id": 1,
+      "name": "English",
+      "code": "en",
+      "status": "active",
+      "deleted_at": null,
+      "deleted_by": null,
+      "created_at": "2024-08-12T05:21:48.000000Z",
+      "updated_at": "2024-08-12T05:21:48.000000Z"
+    },
+    {
+      "id": 2,
+      "name": "French",
+      "code": "fr",
+      "status": "active",
+      "deleted_at": null,
+      "deleted_by": null,
+      "created_at": "2024-08-12T05:21:48.000000Z",
+      "updated_at": "2024-08-12T05:21:48.000000Z"
+    },
+    {
+      "id": 3,
+      "name": "Spanish",
+      "code": "es",
+      "status": "active",
+      "deleted_at": null,
+      "deleted_by": null,
+      "created_at": "2024-08-12T05:21:48.000000Z",
+      "updated_at": "2024-08-12T05:21:48.000000Z"
+    }
+  ],
+  "unreadMessages": 0,
+  "currentLanguage": "en-US,en;q=0.9,ta;q=0.8",
+  "companyConfig": {
+    "address": "YUGMEDEALS PRIVATE LIMITED, 164, Eriyur New Street, Rangapuram, vellore - 632009",
+    "company_name": "Yugme Boom",
+    "currency": "INR",
+    "email": "contactus@yugmedeals.com",
+    "favicon": "public/J7R4MAzK0cFHKQXuGukyreibMnwxnQZ8n7yhrgIa.png",
+    "google_analytics_tracking_id": null,
+    "google_maps_api_key": null,
+    "logo": "public/6Xo8u9goOH3ulWE6YUKS5dCPkrOvmprXYd4Ma4iI.png",
+    "phone": "+919790213730",
+    "pusher_app_cluster": "ap2",
+    "pusher_app_key": "76921fa9431e99e375b5",
+    "recaptcha_active": "0",
+    "recaptcha_site_key": null,
+    "socials": "{\"facebook\":\"https:\\/\\/www.facebook.com\\/yugmedealsoffical\",\"twitter\":\"https:\\/\\/www.twitter.com\\/yugmedeals\",\"instagram\":\"https:\\/\\/www.instagram.com\\/yugmedeals\\/\",\"slack\":null,\"linkedin\":\"https:\\/\\/www.linkedin.com\\/company\\/yugmedeals\\/\"}",
+    "trial_period": "7"
+  },
+  "setupWhatsapp": true,
+  "subscriptionDetails": null,
+  "subscription": null,
+  "subscriptionIsActive": null
+}
